@@ -21,7 +21,7 @@ const Hero = () => {
                             View Demo
                         </button>
                     </Link>
-                    <Link href="/">
+                    <Link href="#how-it-works-section">
                         <button className="secondary-btn">
                             Learn More
                         </button>

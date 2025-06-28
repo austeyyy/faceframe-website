@@ -20,7 +20,7 @@ const Nav = () => {
         <ul className='md:flex md:items-center'>
           <li className='nav-item'><Link href="#features-section">Features</Link></li>
           <li className='nav-item'><Link href="#how-it-works-section">How It Works</Link></li>
-          <li className='nav-item'><Link href="#contact-section"><button className="primary-btn">
+          <li className='nav-item'><Link href=""><button className="primary-btn">
                               Contact Us
                             </button></Link></li>
         </ul>

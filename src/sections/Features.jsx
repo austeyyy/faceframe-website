@@ -3,9 +3,9 @@ import { ScanEye } from 'lucide-react'
 
 const featureList = [
     {
-        icon: ScanEye,
-        name:"Feature",
-        description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit  consectetur est ac cursus.",
+      icon: ScanEye,
+      name:"Feature",
+      description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit  consectetur est ac cursus.",
     },
     {
       icon: ScanEye,
@@ -26,7 +26,7 @@ const featureList = [
 
 const Features = () => {
   return (
-    <section id="features-section" className="py-24 features-gradient">
+    <section id="features-section" className="pt-24 pb-40 features-gradient">
         <div className="container text-center">
             <h4 className="font-semibold text-dark text-lg md:text-lg uppercase mb-4">FEATURES</h4>
             <h2 className="text-3xl md:text-5xl lg:text-secondary-header lg:leading-[1.1] text-primary-blue font-semibold max-w-xl mx-auto mb-8"> Out with the old, in with the new.</h2>
