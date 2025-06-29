@@ -12,7 +12,7 @@ const About = () => {
         </div>
 
        <div className="container">
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 pt-40 pb-26'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 pt-32 pb-26'>
 
             {/* Column 1 */}
             <div className="flex h-full items-center">

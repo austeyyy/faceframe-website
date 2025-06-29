@@ -4,18 +4,22 @@ import Link from "next/link"
 
 const Footer = () => {
   return (
-    <footer className='text-center'>
+    <footer className='text-center border-t border-gray-400'>
       <div className="py-10">
-        <Image
-            src="/images/favi.png"
-            alt="Footer Logo"
-            height={66}
-            width={64}
-            className="mx-auto"
-          />
+        <Link href="/">
+          <Image
+              src="/images/favi.png"
+              alt="Footer Logo"
+              height={66}
+              width={64}
+              className="mx-auto"
+            />
+        </Link>
+        
 
           <ul className='flex justify-center my-10'>
             <li className='footer-item'><Link href="#features-section" className="footer-nav-link">Features</Link></li>
+            <li className='footer-item'><Link href="#about-section" className="footer-nav-link">About</Link></li>
             <li className='footer-item'><Link href="#how-it-works-section" className="footer-nav-link">How It Works</Link></li>
             <li className='footer-item'><Link href="#contact-section" className="footer-nav-link">Contact</Link></li>
           </ul>

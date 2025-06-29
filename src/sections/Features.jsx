@@ -1,5 +1,5 @@
 import Card from '../components/Card'
-import { ScanEye } from 'lucide-react'
+import { ScanEye, TimerIcon, SearchCheck, Compass } from 'lucide-react'
 
 const featureList = [
     {
@@ -8,17 +8,17 @@ const featureList = [
       description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit  consectetur est ac cursus.",
     },
     {
-      icon: ScanEye,
+      icon: TimerIcon,
       name:"Feature",
       description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit  consectetur est ac cursus.",
     },
     {
-      icon: ScanEye,
+      icon: SearchCheck,
       name:"Feature",
       description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit  consectetur est ac cursus.",
     },
     {
-      icon: ScanEye,
+      icon: Compass,
       name:"Feature",
       description:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit  consectetur est ac cursus.",
     },

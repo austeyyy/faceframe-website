@@ -36,7 +36,7 @@ body, html {
 
 
 .container {
-  @apply w-full max-w-[90rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-16;
+  @apply w-full max-w-[90rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-24;
 }
 
 .footer-nav-link {
@@ -103,7 +103,7 @@ body, html {
 }
 
 .primary-btn {
-  @apply cursor-pointer bg-primary-blue border-[1px] border-gray-300 text-white h-[52px] md:w-auto px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 hover:bg-secondary-blue hover:scale-105 transition-all duration-300
+  @apply cursor-pointer bg-primary-blue border-[1px] border-gray-300 text-white text-lg h-[52px] md:w-auto px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 hover:bg-secondary-blue hover:scale-105 transition-all duration-300
 }
 
 .secondary-btn {
@@ -143,4 +143,18 @@ body, html {
 
 .secondary-heading {
   @apply text-[56px] leading-[1.2]
+}
+
+.mask-01 {
+  -webkit-mask-image: url('/01.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+
+  mask-image: url('/masks/01-mask.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+
+  background-color: red; /* optional debug */
 }
