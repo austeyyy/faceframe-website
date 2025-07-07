@@ -26,10 +26,10 @@ const featureList = [
 
 const Features = () => {
   return (
-    <section id="features-section" className="pt-24 pb-40 features-gradient">
+    <section id="features-section" className="pt-24 pb-56 features-gradient">
         <div className="container text-center">
-            <h4 className="font-semibold text-dark text-lg md:text-lg uppercase mb-4">FEATURES</h4>
-            <h2 className="text-3xl md:text-5xl lg:text-secondary-header lg:leading-[1.1] text-primary-blue font-semibold max-w-xl mx-auto mb-8"> Out with the old, in with the new.</h2>
+            <h4 className="font-semibold text-dark text-base md:text-lg uppercase mb-4">FEATURES</h4>
+            <h2 className="text-5xl lg:text-secondary-header lg:leading-[1.1] text-primary-blue font-semibold max-w-xl mx-auto mb-8"> Out with the old, in with the new.</h2>
             <p className="text-base md:text-lg text-gray-600 font-semibold max-w-4xl mx-auto">No more guessing what looks good. No more wasting time digging through endless racks of glasses. And no more settling for frames that don’t fit your face or your style.</p>
 
 

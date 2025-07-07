@@ -17,7 +17,7 @@ const HowItWorks = () => {
                   
 
                   <Link href="/">
-                        <button className="!w-[90%] !h-[56px] primary-btn mb-10">
+                        <button className="!w-[90%] !h-[56px] hover:!scale-[1.02] primary-btn mb-10">
                             Find Nearby Store
                         </button>
                   </Link>
@@ -27,7 +27,17 @@ const HowItWorks = () => {
               </div>
 
               {/*Column 2*/}
-              <div className="hidden md:block">
+              <div className="relative">
+                <div className="absolute -top-[800px] left-1/2 -translate-x-1/2 md:-right-32 md:-top-56">
+                <div className="relative w-[24rem] h-[14rem] rounded-[10px] md:w-[35rem] md:h-[36rem] md:rounded-[20px] border-[1px] border-gray-300 overflow-hidden">
+                      <Image
+                          src="/images/image3.jpeg"
+                          alt="lady with glasses"
+                          fill
+                          style={{objectFit: 'cover'}}
+                      />
+                  </div>
+                </div>
 
               </div>
 
@@ -36,14 +46,14 @@ const HowItWorks = () => {
 
           <div className="flex flex-col px-14 mt-28 gap-24">
               {/*Visit a Store*/}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                   <div>
                     <h1 className="text-header leading-[1.2]  font-semibold">Visit a store</h1>
                     <hr className="border-gray-500 border-2 w-[30%] my-8"/>
                     <p className="text-lg mb-6">At FaceFrame, we believe choosing the right frames should be simple, accurate, and even fun. With our AI-powered virtual try-on tool, there’s no need for measurements or uncertainty — just a seamless way to find what fits you best.</p>
                   </div>
 
-                  <div className="text-9xl mx-auto">01</div>
+                  <div className="text-[300px] lg:text-[450px] justify-center font-semibold leading-none">01</div>
 
 
                   
@@ -52,8 +62,9 @@ const HowItWorks = () => {
                 <hr className="border-[0.5px] border-gray-400 mb-8 w-full mx-auto"/>
 
                 {/*Scan your face*/}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="text-9xl mx-auto">02</div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                  <div className="text-[300px] lg:text-[450px] justify-center font-semibold leading-none tracking-tighter">02</div>
+
                   <div>
                     <h1 className="text-header leading-[1.2]  font-semibold">Scan your face</h1>
                     <hr className="border-gray-500 border-2 w-[30%] my-8"/>
@@ -64,14 +75,14 @@ const HowItWorks = () => {
                 <hr className="border-[0.5px] border-gray-400 mb-8 w-full mx-auto"/>
 
                 {/*Find your face*/}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                   <div>
                     <h1 className="text-header leading-[1.2]  font-semibold">Find your fit</h1>
                     <hr className="border-gray-500 border-2 w-[30%] my-8"/>
                     <p className="text-lg mb-6">Instantly receive frame recommendations tailored to your face shape, style preferences, and fit. Try them on virtually or in person, and walk out with glasses made just for you.</p>
                   </div>
 
-                  <div className="text-9xl mx-auto">03</div>
+                  <div className="text-[300px] lg:text-[450px] justify-center font-semibold leading-none">03</div>
                 </div>
 
               </div>

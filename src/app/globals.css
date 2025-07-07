@@ -21,7 +21,7 @@ body, html {
   --color-primary-blue: var(--primary-blue);
   --color-secondary-blue: var(--secondary-blue);
   --color-dark: var(--dark);
-  --text-header: 64px;
+  --text-header: 60px;
   --text-secondary-header: 56px;
 }
 
@@ -36,7 +36,7 @@ body, html {
 
 
 .container {
-  @apply w-full max-w-[90rem] mx-auto px-4 sm:px-6 md:px-8 lg:px-24;
+  @apply w-full max-w-[90rem] 2xl:max-w-[90%] mx-auto px-5 md:px-10 lg:px-24;
 }
 
 .footer-nav-link {
@@ -68,12 +68,11 @@ body, html {
 }
 
 
-
 /* Apply different clip-path only on md and up */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .clip-about-shape {
     clip-path: polygon(
-      0% 7.5%, 55% 7.5%, 55% 0, 85% 0%, 100% 0,
+      0% 7.5%, 53% 7.5%, 53% 0, 85% 0%, 100% 0,
       100% 15%, 100% 85%, 100% 100%, 85% 100%,
       15% 100%, 0 100%, 0% 85%
     );
@@ -107,7 +106,7 @@ body, html {
 }
 
 .secondary-btn {
-  @apply cursor-pointer bg-transparent border-[1.5px] border-black text-black h-[52px] md:w-auto px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 hover:bg-gray-100 hover:scale-105 transition-all duration-300
+  @apply cursor-pointer bg-[#FAFAFA] border-[1.5px] border-black text-black h-[52px] md:w-auto px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 hover:bg-gray-100 hover:scale-105 transition-all duration-300
 }
 
 .animated {
