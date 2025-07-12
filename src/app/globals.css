@@ -28,7 +28,7 @@ body, html {
 
 
 .nav-item {
-  @apply text-lg text-gray-500 hover:text-primary-blue font-semibold mx-8 transition-colors duration-300
+  @apply text-xl md:text-lg text-gray-500 hover:text-primary-blue font-semibold mx-8 transition-colors duration-300
 }
 .footer-item {
   @apply text-xl text-gray-500 hover:text-primary-blue font-semibold mx-8 transition-colors duration-300
@@ -102,11 +102,11 @@ body, html {
 }
 
 .primary-btn {
-  @apply cursor-pointer bg-primary-blue border-[1px] border-gray-300 text-white text-lg h-[52px] md:w-auto px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 hover:bg-secondary-blue hover:scale-105 transition-all duration-300
+  @apply cursor-pointer bg-primary-blue border-[1px] border-gray-300 text-white text-lg h-[52px] md:w-auto px-8 md:px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 hover:bg-secondary-blue hover:scale-105 transition-all duration-300
 }
 
 .secondary-btn {
-  @apply cursor-pointer bg-[#FAFAFA] border-[1.5px] border-black text-black h-[52px] md:w-auto px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 hover:bg-gray-100 hover:scale-105 transition-all duration-300
+  @apply cursor-pointer bg-[#FAFAFA] border-[1.5px] border-black text-black h-[52px] md:w-auto px-8 md:px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 hover:bg-gray-100 hover:scale-105 transition-all duration-300
 }
 
 .animated {
@@ -144,16 +144,136 @@ body, html {
   @apply text-[56px] leading-[1.2]
 }
 
-.mask-01 {
-  -webkit-mask-image: url('/01.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
 
-  mask-image: url('/masks/01-mask.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
 
-  background-color: red; /* optional debug */
+
+/* globals.css or Hero.module.css */
+
+.glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
 }
+
+.glow--1 {
+  width: 300px;
+  height: 300px;
+  top: -80px;
+  left: -60px;
+  background-color: rgba(96, 165, 250, 0.25); /* Tailwind's blue-400 */
+  animation: floatGlow 8s ease-in-out infinite;
+}
+
+.glow--2 {
+  width: 250px;
+  height: 250px;
+  bottom: -60px;
+  right: -40px;
+  background-color: rgba(147, 197, 253, 0.25); /* Tailwind's blue-300 */
+  animation: driftGlow 16s ease-in-out infinite;
+}
+
+@keyframes floatGlow {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
+@keyframes driftGlow {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+/* ==========================================================================
+   REVEAL ANIMATIONS
+   ========================================================================== */
+
+   .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition-property: opacity, transform;
+    transition-duration: 0.7s;
+    transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1); /* easeOutExpo */
+    will-change: opacity, transform;
+  }
+  
+  
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .reveal-forward {
+    opacity: 0;
+    transform: scale(0.75);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .reveal-forward.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .reveal-left.active,
+  .reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  /* Delay classes */
+  .delay-100 {
+    transition-delay: 0.1s;
+  }
+  .delay-200 {
+    transition-delay: 0.2s;
+  }
+  .delay-300 {
+    transition-delay: 0.3s;
+  }
+  .delay-400 {
+    transition-delay: 0.4s;
+  }
+  .delay-500 {
+    transition-delay: 0.5s;
+  }
+  .delay-600 {
+    transition-delay: 0.6s;
+  }
+  .delay-700 {
+    transition-delay: 0.7s;
+  }
+
+  .delay-800 {
+    transition-delay: 0.8s;
+  }
+  .delay-900 {
+    transition-delay: 0.9s;
+  }
+  .delay-1000 {
+    transition-delay: 1s;
+  }
+  

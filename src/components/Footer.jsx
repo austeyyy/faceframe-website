@@ -17,7 +17,7 @@ const Footer = () => {
         </Link>
         
 
-          <ul className='flex justify-center my-10'>
+          <ul className='flex flex-col md:flex-row justify-start md:justify-center my-10'>
             <li className='footer-item'><Link href="#features-section" className="footer-nav-link">Features</Link></li>
             <li className='footer-item'><Link href="#about-section" className="footer-nav-link">About</Link></li>
             <li className='footer-item'><Link href="#how-it-works-section" className="footer-nav-link">How It Works</Link></li>
