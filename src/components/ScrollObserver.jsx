@@ -3,22 +3,31 @@ import { useEffect } from 'react';
 
 export default function ScrollObserver() {
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries, obs) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('active');
-            obs.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.4 }
-    );
+    const startObserver = () => {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              obs.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.4 }
+      );
 
-    const elements = document.querySelectorAll('.reveal');
-    elements.forEach(el => observer.observe(el));
+      const elements = document.querySelectorAll('.reveal');
+      elements.forEach(el => observer.observe(el));
+    };
 
-    return () => observer.disconnect();
+    // attach observer after load for performance 
+    if (document.readyState === 'complete') {
+      startObserver();
+    } else {
+      window.addEventListener('load', startObserver);
+    }
+
+    return () => window.removeEventListener('load', startObserver);
   }, []);
 
   return null;
