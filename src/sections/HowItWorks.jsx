@@ -9,14 +9,14 @@ const HowItWorks = () => {
           {/* Column 1 */}
           <div className="text-center md:text-left pe-0 md:pe-10">
             <h4 className="reveal text-base font-semibold md:text-lg mb-4">HOW IT WORKS</h4>
-            <h1 className="reveal delay-100 text-[40px] md:text-secondary-header leading-tight font-semibold mb-8 max-w-xl">
-              Finding frames just got easier
+            <h1 className="reveal delay-100 text-[43px] md:text-secondary-header leading-[1.1] font-semibold mb-8 max-w-xl">
+              Finding frames just got easier.
             </h1>
             <hr className="reveal delay-100 border-secondary-blue border-2 mx-auto md:mx-0 w-[30%] mb-8" />
 
             <Link href="/" className="reveal delay-200">
               <button className="primary-btn w-full md:w-[90%] h-[56px] hover:scale-[1.02] transition-transform mb-10">
-                Find Nearby Store
+                View Demo
               </button>
             </Link>
 
@@ -57,7 +57,7 @@ const HowItWorks = () => {
                 measurements or uncertainty — just a seamless way to find what fits you best.
               </p>
             </div>
-            <div className="reveal delay-100 px-10 order-first md:order-last">
+            <div className="reveal delay-100 px-10 order-first mx-auto md:order-last">
               <Image
               src="/01.png"
               alt="test"
@@ -72,7 +72,7 @@ const HowItWorks = () => {
 
           {/* Step 2 */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="reveal delay-100 px-10">
+          <div className="reveal delay-100 px-10 ">
               <Image
               src="/02.png"
               alt="test"
@@ -109,7 +109,7 @@ const HowItWorks = () => {
                 glasses made just for you.
               </p>
             </div>
-            <div className="reveal delay-100 px-10 order-first md:order-last">
+            <div className="reveal delay-100 px-10 order-first mx-auto md:order-last">
               <Image
               src="/03.png"
               alt="test"

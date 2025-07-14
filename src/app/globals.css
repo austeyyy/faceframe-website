@@ -145,10 +145,6 @@ body, html {
 }
 
 
-
-
-/* globals.css or Hero.module.css */
-
 .glow {
   position: absolute;
   border-radius: 50%;
@@ -175,26 +171,7 @@ body, html {
   animation: driftGlow 16s ease-in-out infinite;
 }
 
-@keyframes floatGlow {
-  0%, 100% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-20px) scale(1.05);
-  }
-}
 
-@keyframes driftGlow {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(20px, -20px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 
 /* ==========================================================================
    REVEAL ANIMATIONS
