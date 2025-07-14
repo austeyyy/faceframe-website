@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ScrollObserver from '../components/ScrollObserver'
+import { Analytics } from "@vercel/analytics/next"
 
 
 const inter = Inter({
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       >
         <ScrollObserver/>
         {children}
+        <Analytics />
       </body>
     </html>
   );
