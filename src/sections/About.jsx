@@ -60,7 +60,7 @@ const About = () => {
                     <div className="reveal reveal-right delay-300 mb-5 md:mb-0 text-left md:text-left">
                         <h3 className="text-4xl text-white font-semibold mb-5">Vision</h3>
                         <hr className="border-[1px] border-white my-4 w-[60%] md:hidden"/>
-                        <p className="text-base text-white">FaceFrame envisions a future where finding the perfect pair of glasses is effortless, personalized, and fully virtual. We aim to lead the shift to online eyewear by combining technology with user-centric design.</p>
+                        <p className="text-base text-white">FaceFrame envisions a future where finding the perfect pair of glasses is effortless and personalized. We aim to lead the shift to online eyewear by combining technology with user-centric design.</p>
 
                     </div>
 
