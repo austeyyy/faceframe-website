@@ -1,9 +1,8 @@
 "use client";
 
 import React, { useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-import { Menu, X } from 'lucide-react'; // or your preferred icon library
+import { Menu, X } from 'lucide-react';
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,38 +10,58 @@ const Nav = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+    closeMenu();
+  };
+
   return (
     <nav className="w-full py-3 bg-white shadow-xs md:bg-inherit md:shadow-none relative z-50">
       <div className="flex items-center justify-between py-2 md:py-4 md:px-10 px-7">
         {/* Logo */}
-        <Link href="/">
-        <div className="w-[180px] md:w-[200px] lg:w-[240px]">
-          <Image
-            src="/images/faceframe_logo.png"
-            alt="FaceFrame Logo"
-            width={240}
-            height={80}
-            priority
-            style={{ height: 'auto', width: '100%' }}
-          />
-        </div>
-
-        </Link>
+        <a href="/">
+          <div className="w-[180px] md:w-[200px] lg:w-[240px]">
+            <Image
+              src="/images/faceframe_logo.png"
+              alt="FaceFrame Logo"
+              width={240}
+              height={80}
+              priority
+              style={{ height: 'auto', width: '100%' }}
+            />
+          </div>
+        </a>
 
         {/* Desktop nav + mobile toggle */}
         <div className="flex items-center gap-6">
           {/* Desktop Navigation */}
           <ul className="hidden md:flex md:items-center gap-6">
             <li className="nav-item">
-              <Link href="#features-section">Features</Link>
+              <button
+                onClick={() => scrollToSection('features-section')}
+                className="cursor-pointer"
+              >
+                Features
+              </button>
             </li>
             <li className="nav-item">
-              <Link href="#how-it-works-section">How It Works</Link>
+              <button
+                onClick={() => scrollToSection('how-it-works-section')}
+                className="cursor-pointer"
+              >
+                How It Works
+              </button>
             </li>
             <li className="nav-item">
-              <Link href="#contact-section">
-                <button className="primary-btn">Contact Us</button>
-              </Link>
+              <button
+                onClick={() => scrollToSection('contact-section')}
+                className="primary-btn"
+              >
+                Contact Us
+              </button>
             </li>
           </ul>
 
@@ -65,18 +84,30 @@ const Nav = () => {
         `}
       >
         <li className="nav-item px-6 py-2">
-          <Link href="#features-section" onClick={closeMenu}>Features</Link>
+          <button
+            onClick={() => scrollToSection('features-section')}
+            className="nav-link-button w-full text-left"
+          >
+            Features
+          </button>
         </li>
         <li className="nav-item px-6 py-2">
-          <Link href="#how-it-works-section" onClick={closeMenu}>How It Works</Link>
+          <button
+            onClick={() => scrollToSection('how-it-works-section')}
+            className="nav-link-button w-full text-left"
+          >
+            How It Works
+          </button>
         </li>
         <li className="nav-item px-6 py-4">
-          <Link href="#contact-section" onClick={closeMenu}>
-            <button className="primary-btn">Contact Us</button>
-          </Link>
+          <button
+            onClick={() => scrollToSection('contact-section')}
+            className="primary-btn w-full"
+          >
+            Contact Us
+          </button>
         </li>
       </ul>
-
     </nav>
   );
 };

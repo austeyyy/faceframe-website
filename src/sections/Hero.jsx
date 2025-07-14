@@ -22,8 +22,8 @@ const Hero = () => {
             Find your <br className="block lg:hidden"/> <span className="text-primary-blue font-semibold md:font-medium">perfect glasses</span> with the power of AI.
           </h1>
 
-          <p className="reveal delay-400 text-base xl:text-lg 2xl:text-xl text-gray-700 mb-6 md:mb-8">
-            FaceFrame uses cutting-edge AI and facial recognition to recommend glasses tailored to your unique features. <span className="hidden lg:block">Built by a team of students across business and tech, we're redefining the way people shop for glasses.</span>
+          <p className="reveal delay-400 text-lg xl:text-lg 2xl:text-xl text-gray-700 mb-6 md:mb-8">
+            FaceFrame uses machine learning and facial recognition to recommend glasses tailored to your unique features. <span className="hidden lg:block">Built by a team of students across business and tech, we're redefining the way people shop for glasses.</span>
           </p>
 
           <div className="flex w-full gap-4 sm:gap-6">

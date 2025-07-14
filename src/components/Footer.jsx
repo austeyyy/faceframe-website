@@ -5,14 +5,21 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <footer className='text-center border-t border-gray-400'>
-      <div className="py-10">
+      <div className="py-10 text-left md:text-center">
         <Link href="/">
           <Image
               src="/images/favi.png"
               alt="Footer Logo"
               height={66}
               width={64}
-              className="mx-auto"
+              className="mx-auto hidden md:block"
+            />
+            <Image
+              src="/images/faceframe_logo2.png"
+              alt="Footer Logo"
+              height={225}
+              width={225}
+              className=" ps-8 md:hidden"
             />
         </Link>
         
@@ -26,7 +33,7 @@ const Footer = () => {
 
           <hr className="border-[0.5px] border-gray-400 mb-8 w-[80%] mx-auto"/>
 
-          <div className="text-gray-600 text-center">
+          <div className="text-[14px] md:text-base text-gray-600 text-center">
             Copyright &copy; FaceFrame. All rights reserved.
           </div>
 

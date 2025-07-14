@@ -13,10 +13,10 @@ export default function ScrollObserver() {
             }
           });
         },
-        { threshold: 0.4 }
+        { threshold: 0.6 }
       );
 
-      const elements = document.querySelectorAll('.reveal');
+      const elements = document.querySelectorAll('.reveal, .reveal-lg');
       elements.forEach(el => observer.observe(el));
     };
 

@@ -27,9 +27,9 @@ const About = () => {
             {/* Column 2 */}
             <div className="text-center md:text-left">
                 <h4 className="reveal font-semibold text-white text-base lg:text-lg mb-4" >ABOUT US</h4>
-                <h1 className="reveal delay-100 text-[43px] lg:text-secondary-header leading-[1.1] text-white font-semibold mb-8">No measuring, no second-guessing.</h1>
+                <h1 className="reveal text-[43px] lg:text-secondary-header leading-[1.1] text-white font-semibold mb-8">No measuring, no second-guessing.</h1>
 
-                <hr className="reveal delay-100 border-white border-2 mx-auto md:mx-0 w-[30%] mb-8" />
+                <hr className="reveal border-white border-2 mx-auto md:mx-0 w-[30%] mb-8" />
                 {/* Divider
                 <div className="flex md:hidden w-1/2 mx-auto my-8 items-center"> 
                     <hr className="border-[1px] border-white w-full mx-auto "/>
@@ -44,7 +44,7 @@ const About = () => {
                     <hr className="border-[1px] border-white w-full mx-auto "/>
                 </div> */}
 
-                <p className="reveal delay-200 text-base md:text-lg text-white mb-6">At FaceFrame, we believe choosing the right frames should be simple, accurate, and even fun. With our AI-powered virtual try-on tool, there’s no need for measurements or uncertainty — just a seamless way to find what fits you best.</p>
+                <p className="reveal text-base md:text-lg text-white mb-6">As a team of students, we believe choosing the right frames should be simple, accurate, and even fun. With our AI-powered virtual try-on tool, there’s no need for measurements or uncertainty, just a seamless way to find what fits you best.</p>
 
                  
                  <div className="relative reveal md:hidden w-full h-[15rem] md:w-[31.25rem] md:h-[28.125rem] rounded-[10px] border-[1px] border-gray-400 my-20 md:mb-0 overflow-hidden">
@@ -58,14 +58,14 @@ const About = () => {
 
                
                 <div className="flex flex-col md:flex-row gap-6 mt-12">
-                    <div className="reveal reveal-left md:reveal-right delay-300 mb-5 md:mb-0 text-left md:text-left">
+                    <div className="reveal sm:reveal-left reveal-right mb-5 md:mb-0 text-left md:text-left">
                         <h3 className="text-4xl text-white font-semibold mb-5">Vision</h3>
                         <hr className="border-[1px] border-white my-4 w-[60%] md:hidden"/>
                         <p className="text-base text-white">FaceFrame envisions a future where finding the perfect pair of glasses is effortless and personalized. We aim to lead the shift to online eyewear by combining technology with user-centric design.</p>
 
                     </div>
 
-                    <div className="reveal reveal-right delay-500 text-right md:text-left">
+                    <div className="reveal reveal-right delay-200 text-right md:text-left">
                         <h3 className="text-4xl text-white font-semibold mb-5">Mission</h3>
                         <hr className="border-[1px] border-white my-4 w-[60%] ms-auto md:hidden"/>
                         <p className="text-base text-white">Our mission is to empower individuals to find eyewear that fits their face and style with confidence. Using facial scanning and smart recommendations, we’re reshaping the digital eyewear experience.</p>
