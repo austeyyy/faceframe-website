@@ -57,7 +57,7 @@ const FeatureCards = ({ featureList }) => {
             <div className="card bg-white border border-gray-300 rounded-[20px] w-full h-full md:hover:scale-105 transition duration-300 flex flex-col">
                 <div className="p-10 flex-grow flex flex-col">
                 <Icon className="text-secondary-blue size-12 md:size-14 mx-auto mb-4 md:mb-6" />
-                <h3 className="font-bold text-2xl md:text-xl text-primary-blue mb-2">{card.name}</h3>
+                <h3 className="font-semibold text-2xl md:text-xl  mb-2">{card.name}</h3>
                 <p className="text-base md:text-lg leading-[1.45] flex-grow">{card.description}</p>
                 </div>
             </div>

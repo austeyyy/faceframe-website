@@ -3,7 +3,7 @@
 const Contact = () => {
   return (
     <section id="contact-section" className="bg-[url('/images/image2.jpg')] bg-cover bg-center bg-no-repeat h-[425px] lg:h-[625px] scroll-mt-8">
-        <div className="container h-full flex items-center md:py-40 ">
+        <div className="container h-full flex items-center py-24 md:py-40 ">
           <div className="text-center md:text-left align-center md:max-w-3xl">
             <h4 className="reveal font-semibold text-white text-base md:text-lg mb-4" >LETS WORK</h4>
             <h3 className="reveal text-3xl md:text-5xl leading-tight font-semibold text-white mb-8">Whether you're a retailer, innovator, or simply excited about personalized vision tech, we’d love to chat.</h3>

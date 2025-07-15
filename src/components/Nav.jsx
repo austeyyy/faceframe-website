@@ -78,11 +78,15 @@ const Nav = () => {
 
       {/* Mobile Dropdown Menu */}
       <ul
-        className={`
-          md:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white w-full
-          ${menuOpen ? 'max-h-[500px] py-4' : 'max-h-0 py-0'}
-        `}
-      >
+  className={`
+    md:hidden bg-white w-full transform origin-top
+    transition-all duration-300 ease-in-out
+    overflow-hidden
+    ${menuOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 h-0'}
+  `}
+>
+
+
         <li className="nav-item px-6 py-2">
           <button
             onClick={() => scrollToSection('features-section')}
@@ -108,6 +112,7 @@ const Nav = () => {
           </button>
         </li>
       </ul>
+
     </nav>
   );
 };

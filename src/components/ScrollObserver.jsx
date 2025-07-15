@@ -16,7 +16,7 @@ export default function ScrollObserver() {
         { threshold: 0.6 }
       );
 
-      const elements = document.querySelectorAll('.reveal, .reveal-lg');
+      const elements = document.querySelectorAll('.reveal, .reveal-lg, .reveal-sm');
       elements.forEach(el => observer.observe(el));
     };
 
