@@ -17,6 +17,25 @@
      --color-dark: var(--dark);
      --text-header: 60px;
      --text-secondary-header: 56px;
+     --animate-gradient-text: gradient-text 5s ease infinite;
+
+  @keyframes gradient-btn {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+     
+     @keyframes gradient-text {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
    }
    
    /* ===============================
@@ -46,7 +65,7 @@
    }
    
    .footer-item {
-     @apply text-xl text-gray-500 hover:text-primary-blue font-semibold mx-8 mb-4 md:mb-0 transition-colors duration-300;
+     @apply text-xl md:text-lg text-gray-500 hover:text-primary-blue font-semibold mx-8 mb-4 md:mb-0 transition-colors duration-300;
    }
    
    .footer-nav-link {
@@ -79,13 +98,24 @@
    /* ===============================
       Buttons
       =============================== */
-   .primary-btn {
-     @apply cursor-pointer bg-primary-blue border border-gray-300 text-white text-lg h-[52px] md:w-auto px-8 md:px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 hover:bg-secondary-blue hover:scale-105 transition-all duration-300;
-   }
-   
+    .primary-btn {
+      @apply cursor-pointer bg-primary-blue border border-gray-300 text-white text-lg h-[52px] md:w-auto px-8 md:px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 transition-all duration-300;
+    
+    }
+    
+    .primary-btn:hover {
+      @apply scale-105;
+    
+      background-image: linear-gradient(60deg, #5092D8, #8DBBEB, #5092D8);
+      background-size: 200% 200%;
+      animation: gradient-btn 8s ease infinite;
+    }
+      
    .secondary-btn {
      @apply cursor-pointer bg-[#FAFAFA] border-[1.5px] border-black text-black h-[52px] md:w-auto px-8 md:px-12 rounded-[17px] font-semibold inline-flex items-center justify-center gap-2 hover:bg-gray-100 hover:scale-105 transition-all duration-300;
    }
+
+
    
    /* ===============================
       Animations & Effects
@@ -157,6 +187,15 @@
      transition-property: opacity, transform;
      transition-duration: 0.7s;
      transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1); /* easeOutExpo */
+     will-change: opacity, transform;
+   }
+
+   .reveal-btn {
+     opacity: 0;
+     transform: translateY(50px);
+     transition-property: opacity, transform;
+     transition-duration: 0.7s;
+     transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
      will-change: opacity, transform;
    }
    

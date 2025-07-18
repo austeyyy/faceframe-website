@@ -58,7 +58,7 @@ const Nav = () => {
             <li className="nav-item">
               <button
                 onClick={() => scrollToSection('contact-section')}
-                className="primary-btn"
+                className="primary-btn !px-8 !py-0"
               >
                 Contact Us
               </button>

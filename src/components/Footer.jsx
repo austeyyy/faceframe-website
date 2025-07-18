@@ -14,20 +14,15 @@ const Footer = () => {
     <footer className="text-center border-t border-gray-400">
       <div className="py-10 text-left md:text-center">
         <a href="/">
-          <Image
-            src="/images/favi.png"
-            alt="Footer Logo"
-            height={66}
-            width={64}
-            className="mx-auto hidden md:block"
-          />
+        <div className="relative aspect-[819/304] w-full max-w-[190px] ms-8 mb-8 mt-4 md:mb-10 md:mx-auto">
           <Image
             src="/images/faceframe_logo2.png"
             alt="Footer Logo"
-            height={190}
-            width={190}
-            className="ps-8 md:hidden"
+            fill
+            className="object-contain"
           />
+        </div>
+
         </a>
 
         <ul className="flex flex-col md:flex-row justify-start md:justify-center my-8">

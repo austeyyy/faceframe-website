@@ -9,20 +9,18 @@ const About = () => {
         </div>
 
        <div className="container">
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 pt-16 md:pt-32 pb-26'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 pt-16 lg:pt-32 pb-26'>
 
             {/* Column 1 */}
-            <div className="flex h-full items-center">
-                <div className="relative hidden md:block w-full h-[18rem] md:w-[31.25rem] md:h-[28.125rem] rounded-[20px] border-[1px] border-gray-400 mb-8 md:mb-0 overflow-hidden">
-                    <Image
-                        src="/images/image1.jpeg"
-                        alt="lady with glasses"
-                        fill
-                        style={{objectFit: 'cover'}}
-                    />
-                </div>
-
+            <div className="relative md:w-[420px] md:h-[420px] lg:w-[520px] lg:h-[520px] lg:justify-normal hidden md:flex md:items-center md:justify-center md:mx-auto md:mb-8 lg:mb-0 lg:mx-0 ">
+                <Image
+                    src="/images/about_img2.jpg"
+                    alt="lady with glasses"
+                    fill
+                    className="object-cover"
+                />
             </div>
+
 
             {/* Column 2 */}
             <div className="text-center md:text-left">
@@ -44,17 +42,19 @@ const About = () => {
                     <hr className="border-[1px] border-white w-full mx-auto "/>
                 </div> */}
 
-                <p className="reveal text-lg text-white mb-6">As a team of students, we believe choosing the right frames should be simple, accurate, and even fun. With our AI-powered virtual try-on tool, there’s no need for measurements or uncertainty, just a seamless way to find what fits you best.</p>
+                <p className="reveal text-lg text-white mb-6">At FaceFrame we believe choosing the right frames should be simple, accurate, and even fun. With our AI-powered virtual try-on tool, there’s no need for measurements or uncertainty, just a seamless way to find what fits you best.</p>
 
-                 
-                 <div className="relative reveal md:hidden w-full h-[15rem] md:w-[31.25rem] md:h-[28.125rem] rounded-[10px] border-[1px] border-gray-400 my-12 md:mb-0 overflow-hidden">
-                    <Image
-                        src="/images/image1.jpeg"
+                 <div className="flex items-center justify-center py-8  md:hidden">
+                 <Image
+                        src="/images/aboutimg-sm.png"
                         alt="lady with glasses"
-                        fill
-                        style={{objectFit: 'cover'}}
+                        width={500}
+                        height={500}
+                        className="object-cover"
                     />
-                </div>
+
+                 </div>
+                
 
                
                 <div className="flex flex-col md:flex-row gap-6 mt-12">
