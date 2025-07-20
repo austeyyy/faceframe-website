@@ -1,7 +1,9 @@
 import Link from "next/link"
 import Image from "next/image"
+import ScrollButton from "../components/ScrollButton"
 
 const Hero = () => {
+
   return (
     <section id="hero-section" className="relative md:h-auto lg:h-[calc(100vh-190px)] 2xl:h-[700px]">
 
@@ -25,12 +27,18 @@ const Hero = () => {
           </p>
 
           <div className="flex md:justify-center lg:justify-normal w-full gap-4 sm:gap-6">
-            <Link href="/" className="reveal reveal-left delay-1000 ">
+            <a href="https://youtu.be/YhlZamspXWY?si=cCYS0nw2M1Ha4Uih" target="_blank" className="reveal reveal-left delay-1000 ">
               <button className="primary-btn w-full sm:w-auto">View Demo</button>
-            </Link>
-            <Link href="#how-it-works-section" className="reveal reveal-left delay-800">
-              <button className="secondary-btn w-full sm:w-auto">Learn More</button>
-            </Link>
+            </a>
+            <ScrollButton
+              targetId="how-it-works-section"
+              className="secondary-btn w-full sm:w-auto"
+              
+            >
+              Learn More
+            </ScrollButton>
+
+
           </div>
         </div>
 

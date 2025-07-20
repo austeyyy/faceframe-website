@@ -12,12 +12,15 @@ const HowItWorks = () => {
               Finding frames just got easier.
             </h1>
             <hr className="reveal border-secondary-blue border-2 mx-auto lg:mx-0 w-[30%] mb-8" />
-
-            <a href="/" >
-              <button className="reveal primary-btn w-1/2 md:w-full h-[56px] hover:scale-[1.02] transition-transform mb-5 md:mb-10">
+            <div className="reveal">
+            <a href="https://youtu.be/YhlZamspXWY?si=cCYS0nw2M1Ha4Uih" target="_blank">
+              <button className="primary-btn w-1/2 md:w-full h-[56px] hover:scale-[1.02] transition-transform mb-5 md:mb-10">
                 View Demo
               </button>
             </a>
+
+            </div>
+            
 
             <h3 className="reveal hidden md:block text-xl sm:text-2xl font-semibold mb-6 lg:text-3xl text-gray-600">
               We’ve made finding your perfect pair simple. Here’s how it works:
