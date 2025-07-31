@@ -35,7 +35,7 @@ const Features = () => {
             <p className="reveal text-lg md:text-gray-600 md:font-semibold max-w-4xl mx-auto">No more guessing what looks good. No more wasting time digging through endless racks of glasses. And no more settling for frames that don’t fit your face or your style.</p>
 
 
-            <div className="reveal-lg md:delay-300 flex flex-wrap flex-col md:flex-row gap-8 mt-20 justify-center">
+            <div className="flex flex-wrap flex-col md:flex-row gap-8 mt-20 justify-center">
               <FeatureList featureList={featureList} /> 
             </div>
 
